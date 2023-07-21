@@ -1,4 +1,3 @@
-// app.js
 import dotenv from 'dotenv';
 import express from 'express';
 import bodyParser from 'body-parser';
@@ -56,7 +55,5 @@ app.post('/playlist/add', async (req, res) => {
     res.status(500).json({ error: 'Server error' });
   }
 });
-
-// ... Other route handlers for playing a song, getting the playlist, and sorting by most played ...
 
 app.listen(port, () => console.log(`Server running on port: http://localhost:${port}`));
